@@ -127,7 +127,7 @@ function removeFromCart(productName) {
 }
 
 function checkout() {
-    const whatsappNumber = '+212649455082';
+    const whatsappNumber = '+212767594538';
     const totalPrice = cart.reduce((acc, item) => acc + item.price * item.quantity, 0).toFixed(2);
     const message = `Hello, I would like to order the following items:\n\n` +
                     cart.map(item => `${item.name} - $${item.price.toFixed(2)} x ${item.quantity}`).join('\n') +
